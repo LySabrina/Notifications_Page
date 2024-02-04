@@ -1,6 +1,7 @@
 // import Mark from "/assets/images/avatar-mark-webber.webp";
 
-import "../Notification/NotificationCard.scss";
+// import "../Notification/NotificationCard.scss";
+import "../Notification/notificationCard.scss";
 import { createNotification } from "../../utility/createNotification";
 
 export default function NotificationCard({ notification, setNotification }) {
