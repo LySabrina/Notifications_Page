@@ -7,5 +7,5 @@ export default defineConfig({
     port:3000
   },
   plugins: [react()],
-  base: "/Notifications_Page/",
+  base: "/Notifications_Page",
 })
