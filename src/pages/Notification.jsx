@@ -7,7 +7,7 @@ export default function Notification() {
   const [notifications, setNotification] = useState([
     {
       name: "Mark Webber",
-      img: "/assets/images/avatar-mark-webber.webp",
+      img: "/Notifications_Page/assets/images/avatar-mark-webber.webp",
       type: Type.REACTION,
       event: "My first torunament today!",
       seen: false,
@@ -16,7 +16,7 @@ export default function Notification() {
     },
     {
       name: "Angela Gray",
-      img: "/assets/images/avatar-angela-gray.webp",
+      img: "/Notifications_Page/assets/images/avatar-angela-gray.webp",
       type: Type.FOLLOW,
       event: null,
       seen: false,
@@ -25,7 +25,7 @@ export default function Notification() {
     },
     {
       name: "Jacob Thompson",
-      img: "/assets/images/avatar-jacob-thompson.webp",
+      img: "/Notifications_Page/assets/images/avatar-jacob-thompson.webp",
       type: Type.MEMBER_JOIN,
       event: "Chess Club",
       seen: false,
@@ -34,7 +34,7 @@ export default function Notification() {
     },
     {
       name: "Rizky Hasanuddin",
-      img: "/assets/images/avatar-rizky-hasanuddin.webp",
+      img: "/Notifications_Page/assets/images/avatar-rizky-hasanuddin.webp",
       event: null,
       message:
         "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game",
@@ -45,7 +45,7 @@ export default function Notification() {
     },
     {
       name: "Kimberly Smith",
-      img: "/assets/images/avatar-kimberly-smith.webp",
+      img: "/Notifications_Page/assets/images/avatar-kimberly-smith.webp",
       type: Type.COMMENT,
       event: "picture",
       event_img: "/assets/images/image-chess.webp",
@@ -55,7 +55,7 @@ export default function Notification() {
     },
     {
       name: "Nathan Peterson",
-      img: "/assets/images/avatar-nathan-peterson.webp",
+      img: "/Notifications_Page/assets/images/avatar-nathan-peterson.webp",
       type: Type.REACTION,
       event: "5 end-game strategies to increase your win rate",
       seen: true,
@@ -64,7 +64,7 @@ export default function Notification() {
     },
     {
       name: "Anna Kim",
-      img: "/assets/images/avatar-anna-kim.webp",
+      img: "/Notifications_Page/assets/images/avatar-anna-kim.webp",
       type: Type.MEMBER_LEFT,
       event: "Chess Club",
       seen: true,
@@ -94,8 +94,6 @@ export default function Notification() {
       })
     );
   };
-
-  console.log(notifications);
 
   return (
     <div className="notification__container">
