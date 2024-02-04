@@ -1,0 +1,80 @@
+@import "../../sass_styles/variables";
+@import "../../sass_styles/mixin";
+
+.notification__card__container{
+  min-width: 100%;
+  
+}
+.notification__card {
+  // background-color: $c-n-very-light-grayish-blue;
+  background-color: $c-n-very-light-grayish-blue;
+  @include flexCenter(row);
+  justify-content: start;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  min-height: 3em;  
+  
+  
+  .user__img__container {
+    max-width: 2.5em;
+    max-height: 2.5em;
+    margin-right: 1em;
+    .user__img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+//On a separate line instead of being blocked in b/c lot of subchildren
+.notification__info {
+  font-size: 1rem;
+  @include flexCenter(column);
+  align-items: start;
+  .notification__info__text {
+    text-align: left;
+
+    .notification__info__text__DM{
+      border: 2px solid $c-n-light-grayish-blue-2;
+      padding: 0.5em;
+    }
+  }
+  .notification__info__text__user {
+    font-weight: $fw-bold;
+    &:hover {
+      cursor: pointer;
+      color: $c-p-blue;
+    }
+  }
+  .notification__info__text__event {
+    font-weight: $fw-bold;
+    color: $c-n-dark-grayish-blue;
+    &:hover {
+      color: $c-p-blue;
+      cursor: pointer;
+    }
+    
+  }
+
+  .unseen-notification {
+    background-color: $c-p-red;
+    min-width: 0.5em;
+    min-height: 0.5em;
+
+    display: inline-block;
+    border-radius: 50%;
+  }
+  .notification__date {
+    text-align: left;
+    color: $c-n-dark-grayish-blue;
+  }
+}
+
+.seen{
+  background-color: $c-n-white;
+  cursor: auto;
+}
+.club{
+  color:$c-p-blue !important;
+}

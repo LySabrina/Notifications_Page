@@ -1,0 +1,60 @@
+@import "../sass_styles/variables";
+@import "../sass_styles/mixin";
+
+.notification__card__container {
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+.notification__container {
+  background-color: $c-n-white;
+  padding: 1em;
+
+  .notification__header {
+    @include flexCenter(row);
+    justify-content: space-between;
+
+    margin: 1em 0px 1em 0px;
+    .notification__title {
+      font-size: 1.3rem;
+      @include flexCenter(row);
+
+      .notification__title__unread {
+        background-color: $c-p-blue;
+        color: $c-n-white;
+        margin: 0px 0.2em 0px 0.2em;
+        padding: 0.2em 1em 0.2em 1em;
+        border-radius: 0.5em;
+        font-size: 1rem;
+      }
+    }
+
+    .notification__readAll {
+      color: $c-n-dark-grayish-blue;
+      border: 0;
+
+      background-color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $c-p-blue;
+      }
+    }
+  }
+
+  .notification__list {
+    .notification__list__item {
+      margin: 1em 0px 1em 0px;
+      list-style: none;
+    }
+  }
+}
+
+
+@media screen and (min-width:50em){
+  .notification__container{
+    border-radius: 1em;
+    margin:1em;
+    max-width: 50em;
+  }
+}
